@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-purple-700 min-h-screen flex flex-col items-center justify-start p-8">
+  <header class="w-full max-w-4xl bg-purple-800 rounded-2xl p-6 shadow-lg">
+    <h1 class="text-sky-300 text-4xl font-bold mb-6 text-center">أوقات الصلاة</h1>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+      <div id="fajr" class="p-4 bg-purple-600 rounded-xl text-red-200 text-xl font-semibold">--</div>
+      <div id="dhohr" class="p-4 bg-purple-600 rounded-xl text-red-200 text-xl font-semibold">--</div>
+      <div id="asr" class="p-4 bg-purple-600 rounded-xl text-red-200 text-xl font-semibold">--</div>
+      <div id="maghrib" class="p-4 bg-purple-600 rounded-xl text-red-200 text-xl font-semibold">--</div>
+      <div id="isha" class="p-4 bg-purple-600 rounded-xl text-red-200 text-xl font-semibold">--</div>
+    </div>
+    <div>
+        <div class="w-full max-w-md mx-auto mt-10 p-6 bg-purple-800 rounded-2xl shadow-lg">
+  <label for="wilaya" class="block mb-2 text-white font-semibold text-lg">اختر الولاية:</label>
+  <select 
+    id="wilaya" 
+    class="w-full p-3 rounded-xl bg-purple-600 text-white font-medium border border-purple-400 focus:outline-none focus:ring-2 focus:ring-sky-300"
+  >
+    <option value="">-- اختر ولاية --</option>
+    <option value="Tunis">تونس</option>
+    <option value="Ariana">أريانة</option>
+    <option value="Ben Arous">بن عروس</option>
+    <option value="Manouba">منوبة</option>
+    <option value="Sousse">سوسة</option>
+    <option value="Monastir">المنستير</option>
+    <option value="Mahdia">المهدية</option>
+    <option value="Sfax">صفاقس</option>
+    <option value="Kairouan">القيروان</option>
+    <option value="Kasserine">القصرين</option>
+    <option value="Sidi Bouzid">سيدي بوزيد</option>
+    <option value="Sbeitla">السبتة</option>
+    <option value="Gabes">قابس</option>
+    <option value="Mednine">مدنين</option>
+    <option value="Tataouine">تطاوين</option>
+    <option value="Gafsa">قفصة</option>
+    <option value="Tozeur">توزر</option>
+    <option value="Kebili">قبلي</option>
+    <option value="Bizerte">بنزرت</option>
+    <option value="Beja">باجة</option>
+    <option value="Jendouba">جندوبة</option>
+    <option value="Kef">الكاف</option>
+    <option value="Nabeul">نابل</option>
+    <option value="Zaghouan">زغوان</option>
+  </select>
+</div>
+    </div>
+
+    <button onclick="gettime()"
+      class="mt-6 w-full bg-white text-purple-800 font-bold py-3 rounded-2xl hover:bg-sky-300 transition-colors duration-300"> جلب أوقات الصلاة
+    </button>
+  </header>
+    <script src='index.js'></script>
+</body>
+</html>
